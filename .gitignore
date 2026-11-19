@@ -11,3 +11,9 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# CV 的编译中间产物（最终 PDF 在 files/ 下需要提交）
+cv/*.pdf
+cv/*.aux
+cv/*.log
+cv/*.out

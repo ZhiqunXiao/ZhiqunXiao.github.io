@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Zhiqun Xiao's Homepage"
 title_separator          : "-"
 name                     : &name "Zhiqun Xiao"
-description              : &description "Pursuing Master's degree in National University of Defense Technology"
+description              : &description "Ph.D. student in Software Engineering, National University of Defense Technology"
 url                      : https://zhiqunxiao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ZhiqunXiao/ZhiqunXiao.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "231217hengshan.jpg"
   name             : "Zhiqun Xiao"
   pronouns         : # example: "she/her"  
-  bio              : "Pursuing Master's degree in National University of Defense Technology"
+  bio              : "Ph.D. student in Software Engineering, National University of Defense Technology"
   location         : "Changsha, China"
   employer         : "National University of Defense Technology"
   uri              : # URL
@@ -209,9 +209,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -255,14 +252,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
       comment: true
   # _talks
   - scope:

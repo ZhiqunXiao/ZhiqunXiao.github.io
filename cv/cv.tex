@@ -1,0 +1,106 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,margin=1.15cm,top=0.9cm,bottom=0.8cm,includefoot]{geometry}
+\pagestyle{empty}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\setlength{\parskip}{0.2em}\setlength{\parindent}{0pt}
+
+\hypersetup{hidelinks}
+
+\definecolor{accent}{HTML}{1A6EBC}
+\definecolor{graytext}{HTML}{555555}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\color{accent}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{0.6em}{0.2em}
+
+\setlist[itemize]{leftmargin=1.3em,itemsep=0.05em,topsep=0.15em,parsep=0pt}
+
+\newcommand{\entry}[3]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textcolor{graytext}{#2}
+  \end{tabular*}\par\vspace{-0.25em}
+  \noindent\textit{#3}\par\vspace{0.22em}
+}
+\newcommand{\skill}[2]{\textbf{#1}: #2}
+
+\pagestyle{empty}
+
+\begin{document}
+\linespread{1.02}\selectfont
+
+{\Huge\bfseries Zhiqun Xiao}\\[0.35em]
+{\color{graytext} Ph.D. Student in Software Engineering}\\[0.5em]
+National University of Defense Technology, Changsha, China\\
+\href{mailto:georgezizen@gmail.com}{georgezizen@gmail.com} \quad$\cdot$\quad
+\href{https://zhiqunxiao.github.io}{zhiqunxiao.github.io} \quad$\cdot$\quad
+\href{https://github.com/ZhiqunXiao}{github.com/ZhiqunXiao}
+
+\section{Education}
+\entry{National University of Defense Technology}{2025.09 -- present}{Ph.D. in Software Engineering}
+\entry{National University of Defense Technology}{2022.09 -- 2025.06}{M.S. in Software Engineering}
+\entry{Central South University}{2018.09 -- 2022.06}{B.S. in Vehicle Engineering}
+
+\section{Research Interests}
+Embodied Intelligence \quad$\cdot$\quad Agentic Robots \quad$\cdot$\quad Safe AI Systems \quad$\cdot$\quad VLA (Vision Language Action) \\[0.3em]
+Robotics \quad$\cdot$\quad Task Planning
+
+\section{Publications}
+\noindent\textbf{Published}
+\begin{itemize}
+\item \textbf{OCP: An Online Contingent Planning Method for Robot Tasks with Incomplete Knowledge}\\
+  \textit{Z. Xiao}, S. Yang, Y. Xue, S. Wang, X. Mao.\\
+  In \textit{Advanced Intelligent Computing Technology and Applications (ICIC 2024)}, Lecture Notes in Computer Science, vol.~14879, pp.~39--50, Springer, 2024.\\
+  \href{https://doi.org/10.1007/978-981-97-5675-9_4}{doi.org/10.1007/978-981-97-5675-9\_4}
+\end{itemize}
+\vspace{0.2em}
+\noindent\textbf{Manuscripts}
+\begin{itemize}
+\item \textbf{Optimizing Contingent Plans with Parallel Relations and Leveled Plan Graphs} (POCP)\\
+  \textit{Z. Xiao} (first author), 2024. Unpublished manuscript.
+\end{itemize}
+\vspace{0.2em}
+\noindent\textbf{Under Review}
+\begin{itemize}
+\item \textbf{A manuscript on safe robot task planning} (first author), 2026. Under double-blind review; title and venue withheld per the anonymity policy.
+\end{itemize}
+
+\section{Work Experience}
+\entry{High Frequency Trading System Developer (\textit{intern})}{2022.01 -- 2022.08}{A Certain Quantitative Hedge Fund, Changsha, China}
+\begin{itemize}
+\item Developed infrastructure components, in charge of the logging system.
+\item Maintained the trading system.
+\end{itemize}
+
+\section{Campus Experience}
+\entry{National University of Defense Technology}{2022.09 -- present}{Graduate study in Software Engineering}
+\begin{itemize}
+\item Merit Scholarship, First Prize, awarded in three consecutive years (2023 -- 2025).
+\end{itemize}
+
+\vspace{0.25em}
+\entry{Central South University}{2018.09 -- 2022.06}{Undergraduate study in Vehicle Engineering}
+\begin{itemize}
+\item \textbf{Formula Student team}: Assistant Technical Director; team won the First Prize, 2019 NIO Cup China FSEC.
+\item \textbf{Innovation Training Program (2020)}: \textit{Four-Wheel Independent Drive Vehicle Control Strategy Based on FSEC}; national-level project, approved and completed.
+\item \textbf{Engineering Training Competition (2021)}: Team leader, Second Prize, Central South University.
+\item University-level scholarship for three consecutive years (2019 -- 2022).
+\item GPA: 3.7/4.0 (top 30\% in the university).
+\end{itemize}
+
+\enlargethispage{2\baselineskip}
+\section{Skills \& Interests}
+\begin{itemize}[itemsep=0pt,topsep=0.05em,parsep=0pt]
+\item \skill{Programming}{C/C++, Python, Matlab, Simulink}
+\item \skill{Systems \& DevOps}{Linux, Shell, Git, Docker}
+\item \skill{ML \& Agent Frameworks}{PyTorch, Scikit-learn, LangChain, LangGraph}
+\item \skill{Robotics}{ROS / ROS2, Isaac Sim, MuJoCo; hands-on with TurtleBot3 and TIAGo}
+\item \skill{CAD}{Catia, SolidWorks, AutoCAD}
+\item \skill{Interests}{Hiking, Table Tennis, Swimming}
+\end{itemize}
+
+\end{document}
