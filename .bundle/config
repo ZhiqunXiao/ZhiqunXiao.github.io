@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_CACHE_ALL: "true"
+BUNDLE_WITHOUT: ""
+BUNDLE_JOBS: "4"

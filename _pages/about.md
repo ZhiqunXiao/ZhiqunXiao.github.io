@@ -26,7 +26,7 @@ Research Interest
 - Robotics
 - Reinforcement Learning
 
-Selcted Publications
+Selected Publications
 ======
 - OCP: An Online Contingent Planning Method for Robot Tasks with Incomplete Knowledge, 1st author, accepted by [ICIC 2024](http://www.ic-icc.cn/2024/index.htm)
 - Towards Contingent Plan Optimization by Action Parallelization and Graph-based Transformation, 1st author, submitted to [PRICAI 2024](https://pricai.org/2024/)

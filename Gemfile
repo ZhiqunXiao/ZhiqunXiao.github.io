@@ -18,6 +18,14 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Use Ruby stdlib copies of these gems instead of compiling them, which no
+# longer works with Ruby 3.2 (their stdlib versions are no longer "default gems").
+# Commented out for GitHub Pages: its build image has ruby-dev and can build them.
+gem "bigdecimal", "3.1.3"
+gem "racc", "1.6.2"
+gem "json", "2.6.3"
+gem "openssl", "3.1.0"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"

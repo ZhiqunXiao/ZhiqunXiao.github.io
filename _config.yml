@@ -166,9 +166,12 @@ exclude:
   - assets/js/vendor
   - config
   - gulpfile.js
+  - local
   - log
   - node_modules
   - package.json
+  - talkmap.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:
@@ -291,6 +294,10 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+# 说明：github-pages gem 会无条件加载 jekyll-github-metadata，构建时要联网访问
+# api.github.com，国内直连会等到超时（约 60 秒）。站点 url 已在上方显式设置，
+# 不依赖该插件；local/env.sh 里把 http(s)_proxy 指向一个立即拒绝的地址，
+# 让它秒失败，构建时间从 ~63s 降到 ~3s。部署到 GitHub Pages 时无需改动本文件。
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

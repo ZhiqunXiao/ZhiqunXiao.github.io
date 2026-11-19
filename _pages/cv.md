@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* M.S. in Software Engineering, National Universy of Defense Technology, 2025 (Expected)
+* M.S. in Software Engineering, National University of Defense Technology, 2025 (Expected)
 * B.S. in Autonomous Engineering, Central South University, 2022
 
 Work experience
