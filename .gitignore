@@ -5,8 +5,12 @@ _site/
 local/
 vendor/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# Gemfile.lock 需要提交：GitHub Pages 构建时用它锁定依赖版本。
+# 注意：本地装了 hawkins/webrick（见 Gemfile 的 LOCAL_DEV 开关），
+# 但这两个只在本地安装，lockfile 里不含它们，线上构建不受影响。
+
+# bundler 本地配置不要提交：GitHub Pages 会读取它，指向不存在的 vendor/ 会导致构建失败
+.bundle/
 
 # Ingore files created by npm
 node_modules

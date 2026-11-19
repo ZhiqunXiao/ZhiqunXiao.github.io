@@ -11,26 +11,25 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
-# If you want to use Jekyll native, uncomment the line below.
-# To upgrade, run `bundle update`.
-
-# gem "jekyll"
-
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-# Use Ruby stdlib copies of these gems instead of compiling them, which no
-# longer works with Ruby 3.2 (their stdlib versions are no longer "default gems").
-# Commented out for GitHub Pages: its build image has ruby-dev and can build them.
-gem "bigdecimal", "3.1.3"
-gem "racc", "1.6.2"
-gem "json", "2.6.3"
-gem "openssl", "3.1.0"
+# ---------------------------------------------------------------------------
+# 本地预览专用依赖：只在设置了 LOCAL_DEV=1 时安装（见 local/env.sh）。
+#
+# 这些包 GitHub Pages 用不到：
+#   hawkins  —— jekyll serve 的 LiveReload，GitHub 上有同名 *插件*，曾导致线上构建失败
+#   webrick  —— Ruby 3 下本地跑 serve 需要，线上不跑服务器
+#
+# 这样线上的 Gemfile 保持干净，与 GitHub Pages 的构建环境一致。
+# ---------------------------------------------------------------------------
+if ENV["LOCAL_DEV"] == "1"
+  gem "hawkins"
+  gem "webrick", "~> 1.8"
+end
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
-  gem "webrick", "~> 1.8"
 end
