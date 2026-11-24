@@ -9,9 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="margin: 0 0 1.5em 0">
+<div style="margin: 0 0 1.5em 0; display:flex; gap:0.6em; flex-wrap:wrap">
   <a href="/files/Zhiqun_Xiao_CV.pdf" class="btn btn--primary" target="_blank" rel="noopener">
-    <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV as PDF
+    <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV as PDF (English)
+  </a>
+  <a href="/files/Zhiqun_Xiao_CV_zh.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i> 下载中文简历 PDF
   </a>
 </div>
 
@@ -57,6 +60,7 @@ Research Interests
 Skills
 ======
 * **Programming**: C/C++, Python, Matlab, Simulink
+* **Embedded**: Arduino, Raspberry Pi
 * **Systems & DevOps**: Linux, Shell, Git, Docker
 * **ML & Agent Frameworks**: PyTorch, Scikit-learn, LangChain, LangGraph
 * **Robotics**: ROS / ROS2, Isaac Sim, MuJoCo; hands-on experience with mobile robots (TurtleBot3, TIAGo)
@@ -76,5 +80,5 @@ Publications
 * **Optimizing Contingent Plans with Parallel Relations and Leveled Plan Graphs** (POCP), *Z. Xiao* (first author), 2024. Unpublished manuscript.
 
 **Under Review**
-* A manuscript on **safe robot task planning** (first author). Currently under double-blind peer review; title and venue withheld pending the anonymity policy, 2026.
+* **A manuscript on safe robot task planning** (first author), 2026. Under double-blind peer review; title and venue withheld.
 

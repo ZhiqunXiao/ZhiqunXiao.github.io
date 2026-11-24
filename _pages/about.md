@@ -34,7 +34,7 @@ If you would like the full record — degrees, awards, publications and skills �
 
 <div style="margin:1.2em 0 0.4em 0">
   <img src="/images/projects/mecanum-robot-2021.jpg" alt="Mecanum-wheel robot built for the 2021 Engineering Training Competition" style="width:72%; max-width:620px; border-radius:4px; display:block">
-  <div style="font-size:0.78em; color:#666; padding-top:4px">The mecanum-wheel robot I built for the 2021 Engineering Training Competition —</br>Second Prize, Central South University</div>
+  <div style="font-size:0.78em; color:#666; padding-top:4px">The mecanum-wheel robot I built for the 2021 Engineering Training Competition —</br>Second Prize, Central South University. Built on Arduino: motor control, the pan-tilt vision module and the wiring were all developed from scratch, with the vision module providing the visual feedback for autonomous navigation.</div>
 </div>
 
 ## Beyond the Lab

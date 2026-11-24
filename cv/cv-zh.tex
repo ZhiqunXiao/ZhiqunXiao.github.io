@@ -1,0 +1,114 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,margin=1.15cm,top=0.9cm,bottom=0.8cm,includefoot]{geometry}
+\pagestyle{empty}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+% 中文字体：使用系统已安装的思源黑体（Noto Sans CJK SC）
+\setCJKmainfont{Noto Sans CJK SC}[BoldFont={Noto Sans CJK SC Bold}]
+\setCJKsansfont{Noto Sans CJK SC}[BoldFont={Noto Sans CJK SC Bold}]
+\setmainfont{TeX Gyre Termes}   % 拉丁字母/数字沿用 PDF 常见西文字体
+
+\setlength{\parskip}{0.2em}\setlength{\parindent}{0pt}
+
+\hypersetup{hidelinks}
+
+\definecolor{accent}{HTML}{1A6EBC}
+\definecolor{graytext}{HTML}{555555}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\color{accent}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{0.6em}{0.2em}
+
+\setlist[itemize]{leftmargin=1.3em,itemsep=0.05em,topsep=0.15em,parsep=0pt}
+
+\newcommand{\entry}[3]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textcolor{graytext}{#2}
+  \end{tabular*}\par\vspace{-0.25em}
+  \noindent\textit{#3}\par\vspace{0.22em}
+}
+\newcommand{\skill}[2]{\textbf{#1}：#2}
+
+\pagestyle{empty}
+
+\begin{document}
+\linespread{1.02}\selectfont
+
+{\Huge\bfseries 肖志群}\\[0.3em]
+{\color{graytext} 软件工程专业 · 博士研究生}\\[0.5em]
+国防科技大学，湖南长沙\\
+\href{mailto:georgezizen@gmail.com}{georgezizen@gmail.com} \quad$\cdot$\quad
+\href{https://zhiqunxiao.github.io}{zhiqunxiao.github.io} \quad$\cdot$\quad
+\href{https://github.com/ZhiqunXiao}{github.com/ZhiqunXiao} \quad$\cdot$\quad
+\href{https://gitee.com/xiaozq22}{gitee.com/xiaozq22}
+
+\section{教育背景}
+\entry{国防科技大学}{2025.09 -- 至今}{软件工程，博士研究生}
+\entry{国防科技大学}{2022.09 -- 2025.06}{软件工程，工学硕士}
+\entry{中南大学}{2018.09 -- 2022.06}{车辆工程，工学学士}
+
+\section{研究方向}
+具身智能（Embodied Intelligence） \quad$\cdot$\quad 智能体机器人（Agentic Robots） \quad$\cdot$\quad 安全人工智能系统（Safe AI Systems）\\
+视觉语言动作模型（VLA）\quad$\cdot$\quad 机器人学（Robotics）\quad$\cdot$\quad 任务规划（Task Planning）
+
+\section{学术论文}
+\noindent\textbf{已发表}
+\begin{itemize}
+\item \textbf{OCP: An Online Contingent Planning Method for Robot Tasks with Incomplete Knowledge}\\
+  \textit{Z. Xiao}, S. Yang, Y. Xue, S. Wang, X. Mao.\\
+  In \textit{Advanced Intelligent Computing Technology and Applications (ICIC 2024)}, Lecture Notes in Computer Science, vol.~14879, pp.~39--50, Springer, 2024, \href{https://doi.org/10.1007/978-981-97-5675-9_4}{doi:10.1007/978-981-97-5675-9\_4}.
+\end{itemize}
+\vspace{0.2em}
+\noindent\textbf{未发表稿件}
+\begin{itemize}
+\item \textbf{Optimizing Contingent Plans with Parallel Relations and Leveled Plan Graphs} (POCP)\\
+  \textit{Z. Xiao}（第一作者），2024。未发表稿件。
+\end{itemize}
+\vspace{0.2em}
+\noindent\textbf{在审稿件}
+\begin{itemize}
+\item \textbf{一篇面向机器人安全任务规划的研究稿件}（第一作者），2026。目前处于双盲评审阶段，依匿名政策暂不公开题目与投稿去向。
+\end{itemize}
+
+\section{实习经历}
+\entry{高频交易系统开发实习生}{2022.01 -- 2022.08}{某量化对冲基金，湖南长沙}
+\begin{itemize}
+\item 负责基础设施组件开发，主管日志系统；
+\item 参与交易系统的日常维护。
+\end{itemize}
+
+\section{在校经历}
+\entry{国防科技大学}{2022.09 -- 至今}{软件工程专业研究生}
+\begin{itemize}
+\item 2023--2025 年连续三年获校级一等奖学金。
+\end{itemize}
+
+\vspace{0.3em}
+\entry{中南大学}{2018.09 -- 2022.06}{车辆工程专业本科生}
+\begin{itemize}
+\item \textbf{大学生方程式赛车队}：担任技术总监助理，团队获 2019 年"蔚来杯"中国大学生电动方程式大赛（FSEC）一等奖。
+\item \textbf{大学生创新训练项目（2020）}：主持《基于 FSEC 的四轮独立驱动汽车控制策略》，获国家级立项并顺利结题。
+\item \textbf{工程训练综合能力竞赛（2021）}：担任队长，获校二等奖（作品为基于 Arduino 开发的麦克纳姆轮移动机器人）。
+\item 2019--2022 年连续三年获校级奖学金。
+\item 本科 GPA：3.7/4.0（专业前 30\%）。
+\end{itemize}
+
+\enlargethispage{2\baselineskip}
+\section{专业技能与兴趣爱好}
+\begin{itemize}
+\item \skill{编程语言}{C/C++、Python、MATLAB、Simulink}
+\item \skill{嵌入式开发}{Arduino、树莓派（Raspberry Pi）}
+\item \skill{系统与开发工具}{Linux、Shell、Git、Docker}
+\item \skill{机器学习与智能体框架}{PyTorch、Scikit-learn、LangChain、LangGraph}
+\item \skill{机器人系统}{ROS/ROS2、Isaac Sim、MuJoCo；具备 TurtleBot3、TIAGo 等多款移动机器人开发经验}
+\item \skill{机械设计}{Catia、SolidWorks、AutoCAD}
+\item \skill{个人兴趣}{徒步、乒乓球、游泳}
+\end{itemize}
+
+\end{document}
