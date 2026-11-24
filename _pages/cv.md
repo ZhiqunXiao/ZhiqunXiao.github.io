@@ -15,6 +15,12 @@ redirect_from:
   </a>
 </div>
 
+Contact
+======
+* **Email**: georgezizen@gmail.com
+* **GitHub**: [github.com/ZhiqunXiao](https://github.com/ZhiqunXiao)
+* **Gitee**: [gitee.com/xiaozq22](https://gitee.com/xiaozq22)
+
 Education
 ======
 * **Ph.D. in Software Engineering**, National University of Defense Technology, 2025.09 – present

@@ -32,6 +32,11 @@ If you would like the full record — degrees, awards, publications and skills �
 </tr>
 </TABLE>
 
+<div style="margin:1.2em 0 0.4em 0">
+  <img src="/images/projects/mecanum-robot-2021.jpg" alt="Mecanum-wheel robot built for the 2021 Engineering Training Competition" style="width:72%; max-width:620px; border-radius:4px; display:block">
+  <div style="font-size:0.78em; color:#666; padding-top:4px">The mecanum-wheel robot I built for the 2021 Engineering Training Competition —</br>Second Prize, Central South University</div>
+</div>
+
 ## Beyond the Lab
 
 Outside research I hike, play table tennis and swim — partly because they are the same kind of problem as my work, just with better feedback.
@@ -45,6 +50,11 @@ Outside research I hike, play table tennis and swim — partly because they are 
   In *Advanced Intelligent Computing Technology and Applications (ICIC 2024)*, Lecture Notes in Computer Science, vol. 14879, pp. 39–50. Springer, 2024.
   
   Robot tasks are often specified against an initial state the robot cannot fully observe, and classical planning does not handle the resulting uncertainty. This paper presents an online contingent planning method that interleaves planning and execution: rather than committing to a full offline plan, the robot senses, updates what it believes about the world, and replans as new information arrives. This lets the robot still find a feasible plan when its knowledge of the initial state is incomplete.
+
+<div style="margin:0.8em 0 0.2em 0">
+  <video src="/images/videos/ocp-demo.mp4" poster="/images/videos/ocp-poster.jpg" controls preload="none" style="width:78%; max-width:660px; border-radius:4px; display:block"></video>
+  <div style="font-size:0.78em; color:#666; padding-top:4px">OCP running on the TiaGo robot: the plan is revised as observations arrive (Part I), followed by a comparison with CFF and DESPOT in planning and execution time (Part II).</div>
+</div>
 
 **Unpublished manuscripts**
 
