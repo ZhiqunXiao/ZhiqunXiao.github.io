@@ -20,7 +20,7 @@ redirect_from:
 
 Contact
 ======
-* **Email**: georgezizen@gmail.com
+* **Email**: xiaozhiqun@nudt.edu.cn
 * **GitHub**: [github.com/ZhiqunXiao](https://github.com/ZhiqunXiao)
 * **Gitee**: [gitee.com/xiaozq22](https://gitee.com/xiaozq22)
 
